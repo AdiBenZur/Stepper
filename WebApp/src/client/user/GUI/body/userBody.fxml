@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.user.GUI.body.UserBodyController">
+   <children>
+      <fx:include fx:id="flowDefinitionComponent" source="definition/flowDefinitionScene.fxml" />
+      <fx:include fx:id="freeInputsComponent" source="execution/freeinputs/collectInputs.fxml" />
+      <fx:include fx:id="executionDataComponent" source="execution/executiondata/executionData.fxml" />
+      <fx:include fx:id="executionsHistoryComponent" source="history/executionsHistory.fxml" />
+      <fx:include fx:id="startSceneComponent" source="start/userStartScene.fxml" />
+   </children>
+</Pane>

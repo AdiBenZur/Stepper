@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" stylesheets="@adminHistory.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.admin.GUI.body.history.AdminExecutionsHistoryController">
+   <children>
+      <SplitPane dividerPositions="0.4020100502512563" layoutY="-1.0" orientation="VERTICAL" prefHeight="400.0" prefWidth="700.0">
+        <items>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <TableView fx:id="historyTableView" prefHeight="157.0" prefWidth="568.0">
+                     <columns>
+                        <TableColumn fx:id="flowNameColumn" editable="false" prefWidth="158.39996337890625" text="Flow Name" />
+                        <TableColumn fx:id="timeOfExecutionColumn" editable="false" minWidth="5.20001220703125" prefWidth="107.5999755859375" text="Time Of Execution" />
+                        <TableColumn fx:id="resultColumn" editable="false" prefWidth="80.4000244140625" text="Result" />
+                        <TableColumn fx:id="runByColumn" prefWidth="129.79998779296875" text="Run by" />
+                        <TableColumn fx:id="seeDetailsColumn" prefWidth="99.20001220703125" />
+                     </columns>
+                  </TableView>
+                  <Label layoutX="575.0" layoutY="5.0" prefHeight="17.0" prefWidth="42.0" text="Filter :" textFill="#28104e">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox id="choice-box" fx:id="filterChoiceBox" layoutX="617.0" layoutY="6.0" prefHeight="25.0" prefWidth="77.0" />
+               </children>
+            </AnchorPane>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0">
+               <children>
+                  <SplitPane id="split-pane" fx:id="buttomSplitPane" dividerPositions="0.36962750716332377" layoutX="2.0" layoutY="-1.0" prefHeight="235.0" prefWidth="700.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <Accordion prefHeight="25.0" prefWidth="255.0" />
+                              <TitledPane fx:id="executionDataTitledPane" animated="false" prefHeight="233.0" prefWidth="255.0" text="Execution Data">
+                                <content>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                       <children>
+                                          <AnchorPane id="vbox" layoutY="4.0" prefHeight="200.0" prefWidth="255.0">
+                                             <children>
+                                                <RadioButton fx:id="generalFlowDataRadioButton" layoutX="5.0" layoutY="3.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="101.0" text="General data" />
+                                                <TitledPane animated="false" layoutY="26.0" prefHeight="181.0" prefWidth="255.0" text="Steps">
+                                                  <content>
+                                                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                         <children>
+                                                            <VBox id="vbox" fx:id="stepsTitledPaneContentVBox" layoutY="-2.0" prefHeight="157.0" prefWidth="262.0" spacing="5.0">
+                                                               <padding>
+                                                                  <Insets left="5.0" right="5.0" top="5.0" />
+                                                               </padding>
+                                                            </VBox>
+                                                         </children>
+                                                      </AnchorPane>
+                                                  </content>
+                                                </TitledPane>
+                                             </children>
+                                          </AnchorPane>
+                                       </children>
+                                    </AnchorPane>
+                                </content>
+                              </TitledPane>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+                           <children>
+                              <ScrollPane layoutX="-2.0" layoutY="-2.0">
+                                 <content>
+                                    <VBox id="vbox" fx:id="detailsVBox" prefHeight="233.0" prefWidth="437.0" spacing="8.0">
+                                       <padding>
+                                          <Insets left="10.0" right="5.0" top="5.0" />
+                                       </padding>
+                                    </VBox>
+                                 </content>
+                              </ScrollPane>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+        </items>
+      </SplitPane>
+   </children>
+</Pane>

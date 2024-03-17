@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.controlsfx.control.ListSelectionView?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" stylesheets="@userManagement.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.admin.GUI.body.user.management.UsersManagementController">
+   <children>
+      <SplitPane fx:id="splitPane" dividerPositions="0.40257879656160456" layoutX="3.0" layoutY="2.0" prefHeight="400.0" prefWidth="700.0">
+         <items>
+            <AnchorPane id="ancor-pane" minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <Label layoutX="92.0" layoutY="11.0" text="Available Users" textFill="#28104e">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <VBox fx:id="availableUsersVBox" layoutY="36.0" prefHeight="365.0" prefWidth="278.0" spacing="10.0">
+                     <padding>
+                        <Insets left="5.0" top="10.0" />
+                     </padding>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+               <children>
+                  <ScrollPane layoutY="-1.0">
+                     <content>
+                        <VBox fx:id="userInformationVbox" prefHeight="398.0" prefWidth="414.0" spacing="10.0">
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <children>
+                              <Label fx:id="usernameTitleLabel" text="Label">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <HBox spacing="5.0">
+                                 <children>
+                                    <Label text="Is Manager: " />
+                                    <CheckBox fx:id="isManagerCheckBox" mnemonicParsing="false" />
+                                 </children>
+                              </HBox>
+                              <VBox prefHeight="291.0" prefWidth="394.0" VBox.vgrow="NEVER">
+                                 <children>
+                                    <Label text="User's roles:" />
+                                    <ListSelectionView fx:id="rolesListSelectionView" prefHeight="170.0" prefWidth="394.0" />
+                                    <Label text="Available Flows:" />
+                                    <ListView fx:id="availableFlowsListView" prefHeight="84.0" prefWidth="394.0" />
+                                 </children>
+                              </VBox>
+                              <HBox prefHeight="24.0" prefWidth="394.0" spacing="5.0">
+                                 <children>
+                                    <Label text="Number of executions so far:" />
+                                    <Label fx:id="nofExecutionsLabel" />
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </content>
+                  </ScrollPane>
+                  <FlowPane prefHeight="25.0" prefWidth="100.0" AnchorPane.leftAnchor="300.0" AnchorPane.topAnchor="365.0">
+                     <children>
+                        <Button fx:id="saveChangesButton" mnemonicParsing="false" onAction="#saveChangesButtonSetOnAction" text="Save Changes !" />
+                     </children>
+                  </FlowPane>
+               </children>
+            </AnchorPane>
+         </items>
+      </SplitPane>
+   </children>
+</Pane>

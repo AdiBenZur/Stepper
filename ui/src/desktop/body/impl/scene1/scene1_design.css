@@ -1,0 +1,9 @@
+
+#detail-vbox {
+    -fx-background-color: #cccccc;
+}
+
+.flow-definition-radio-button {
+    -fx-font-size: 12px;
+    -fx-text-fill: BLACK;
+}

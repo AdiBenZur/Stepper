@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktop.body.impl.scene2.FlowExecutionController">
+   <children>
+      <fx:include fx:id="executeDataComponent" source="executiondata/executeData.fxml" />
+      <fx:include fx:id="freeInputsComponent" source="freeinputs/freeInputs.fxml" />
+   </children>
+</Pane>

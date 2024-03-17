@@ -1,0 +1,12 @@
+.button {
+    fx-font-family: Calibri;
+    -fx-background-color: #a6a6a6;
+    -fx-font-size: 12px;
+    -fx-pref-width: 120px;
+    -fx-pref-height: 22px;
+    -fx-text-fill: WHITE;
+}
+
+#pane {
+    -fx-background-color: #D5D8DC;
+}

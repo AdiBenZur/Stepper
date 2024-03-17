@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane id="background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="700.0" stylesheets="@statistics.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktop.body.impl.scene4.StatisticsController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TableView fx:id="flowsTableView" layoutX="15.0" layoutY="49.0" prefHeight="300.0" prefWidth="320.0">
+              <columns>
+                <TableColumn fx:id="flowNameColumn" prefWidth="150.0" text="Flow Name" />
+                  <TableColumn fx:id="flowNumberOfExecutionsColumn" editable="false" prefWidth="85.0" text="Number Of&#10;Executions&#10;" />
+                  <TableColumn fx:id="flowAverageExecutionTimesColumn" prefWidth="85.0" text="Average &#10;Execution&#10;Time" />
+              </columns>
+            </TableView>
+            <AnchorPane layoutX="250.0" layoutY="8.0" prefHeight="22.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="71.0" layoutY="5.0" prefHeight="27.0" prefWidth="68.0" text="History" textFill="#28104e">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1">
+         <children>
+            <TableView fx:id="stepsTableView" layoutX="9.0" layoutY="49.0" prefHeight="300.0" prefWidth="320.0">
+              <columns>
+                <TableColumn fx:id="stepNameColumn" prefWidth="150.0" text="Step Name" />
+                  <TableColumn fx:id="stepNumberOfExecutionsColumn" prefWidth="85.0" text="Number Of&#10;Executions" />
+                  <TableColumn fx:id="stepAverageExecutionTimesColumn" prefWidth="85.0" text="Average&#10;Execution&#10;Time" />
+              </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

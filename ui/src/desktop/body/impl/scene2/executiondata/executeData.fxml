@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="700.0" stylesheets="@scene2-2.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktop.body.impl.scene2.executiondata.ExecutionDataController">
+   <children>
+      <AnchorPane layoutY="14.0" prefHeight="38.0" prefWidth="700.0">
+         <children>
+            <Label layoutX="379.0" text="Execution Data" textFill="#28104e">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <GridPane layoutY="47.0" prefHeight="310.0" prefWidth="690.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="345.5999755859375" minWidth="10.0" prefWidth="235.20001220703125" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="464.79998779296875" minWidth="10.0" prefWidth="464.79998779296875" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <AnchorPane layoutX="18.0" layoutY="271.0" prefHeight="38.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="continuationButton" layoutY="7.0" mnemonicParsing="false" onAction="#continuationButtonSetOnAction" text="Continuation" textFill="#5406d1" />
+                     </children>
+                  </AnchorPane>
+                  <Accordion fx:id="accordion" layoutX="17.0" prefHeight="262.0" prefWidth="202.0">
+                    <panes>
+                      <TitledPane animated="false" prefHeight="248.0" prefWidth="202.0" text="Execution Data">
+                        <content>
+                          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <RadioButton fx:id="generalFlowDataRadioButton" layoutX="7.0" layoutY="2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="119.0" text="General flow data" />
+                                    <TitledPane fx:id="stepsTitledPane" animated="false" layoutY="27.0" prefHeight="210.0" prefWidth="200.0" text="Steps">
+                                      <content>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                             <children>
+                                                <VBox fx:id="stepsTitledPaneContentVBox" layoutX="-2.0" layoutY="-2.0" prefHeight="186.0" prefWidth="200.0" spacing="5.0">
+                                                   <padding>
+                                                      <Insets left="5.0" right="5.0" top="5.0" />
+                                                   </padding>
+                                                </VBox>
+                                             </children>
+                                          </AnchorPane>
+                                      </content>
+                                    </TitledPane>
+                                 </children>
+                              </AnchorPane>
+                        </content>
+                      </TitledPane>
+                    </panes>
+                  </Accordion>
+               </children>
+            </Pane>
+            <ScrollPane fitToHeight="true" fitToWidth="true" GridPane.columnIndex="1">
+               <content>
+                  <VBox id="execution-data-vbox" fx:id="detailsVBox" prefHeight="300.0" prefWidth="463.0" spacing="8.0">
+                     <padding>
+                        <Insets left="10.0" right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+         </children>
+      </GridPane>
+   </children>
+</Pane>

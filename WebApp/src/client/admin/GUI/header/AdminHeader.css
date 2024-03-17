@@ -1,0 +1,35 @@
+.header-button {
+    -fx-font-family: Calibri;
+    -fx-background-color: #a6a6a6;
+    -fx-font-size: 12px;
+    -fx-pref-width: 107px;
+    -fx-pref-height: 22px;
+    -fx-text-fill: WHITE;
+}
+
+.header-button:hover {
+
+}
+
+.header-button:pressed {
+
+}
+
+#load-button {
+    -fx-font-family: Calibri;
+    -fx-background-color: #8c8c8c;
+    -fx-font-size: 12px;
+    -fx-text-fill: WHITE;
+}
+
+#loaded-file-box {
+    -fx-font-family: Calibri;
+    -fx-background-color: WHITE;
+    -fx-font-size: 12px;
+    -fx-text-fill: BLACK;
+}
+
+
+#back-header-vbox {
+    -fx-background-color: #D5D8DC;
+}

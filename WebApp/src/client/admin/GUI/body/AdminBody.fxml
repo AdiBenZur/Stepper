@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.Pane?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.admin.GUI.body.AdminBodyController">
+   <children>
+      <fx:include fx:id="executionsHistoryComponent" source="history/adminExecutionsHistory.fxml" />
+      <fx:include fx:id="rolesManagementComponent" source="role/management/rolesManagement.fxml" />
+      <fx:include fx:id="userManagementComponent" source="user/management/usersManagement.fxml" />
+      <fx:include fx:id="statisticsComponent" source="statistic/executionsStatistics.fxml" />
+      <fx:include fx:id="startComponent" source="start/adminStart.fxml" />
+   </children>
+</Pane>

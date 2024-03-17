@@ -1,0 +1,7 @@
+#choice-box .text {
+    -fx-font-size: 10px
+}
+
+#execution-details-vbox {
+    -fx-background-color: #cccccc;
+}

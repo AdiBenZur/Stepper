@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<HBox alignment="TOP_CENTER" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="desktop.header.HeaderController">
+   <children>
+      <VBox id="back-header-vbox" alignment="CENTER" maxHeight="130.0" maxWidth="700.0" prefHeight="130.0" prefWidth="700.0" spacing="20.0" stylesheets="@headerMenu.css" HBox.hgrow="ALWAYS">
+         <children>
+            <Label text="Stepper" textFill="WHITE">
+               <font>
+                  <Font name="Calibri Bold" size="24.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="53.0" prefWidth="664.0" spacing="10.0" VBox.vgrow="NEVER">
+               <children>
+                  <Button id="load-button" fx:id="loadFileButton" mnemonicParsing="false" onAction="#loadFileButtonAction" prefHeight="25.0" prefWidth="128.0" text="Load File Button" />
+                  <TextField id="loaded-file-box" fx:id="currentlyLoadedPathTextField" editable="false" minHeight="20.0" minWidth="20.0" prefHeight="22.0" prefWidth="527.0" promptText="Currently Loaded File Path" />
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="109.0" prefWidth="586.0" spacing="20.0" VBox.vgrow="NEVER">
+               <children>
+                  <Button fx:id="flowDefinitionButton" mnemonicParsing="false" onAction="#flowDefinitionButtonSetOnAction" styleClass="header-button" text="Flows Definition" />
+                  <Button fx:id="flowExecutionButton" mnemonicParsing="false" onAction="#flowExecutionButtonSetOnAction" styleClass="header-button" text="Flows Execution" />
+                  <Button fx:id="executionsHistoryButton" mnemonicParsing="false" onAction="#executionsHistoryButtonSetOnAction" styleClass="header-button" text="Executions History" />
+                  <Button fx:id="statisticsButton" mnemonicParsing="false" onAction="#statisticsButtonSetOnAction" styleClass="header-button" text="Statistics" />
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>
