@@ -37,9 +37,26 @@ Administrator:
 -	Execution history: View all past executions performed by users.
 -	Statistics: View execution statistics, including the duration of flows and steps.
 
+<p float="left">
+  <img src="https://github.com/AdiBenZur/Stepper/blob/master/assets/images/Admin1.png?raw=true" width="450" />
+  <img src="https://github.com/AdiBenZur/Stepper/blob/master/assets/images/Admin2.png?raw=true" width="450" />
+</p>
+<p float="left">
+  <img src="https://github.com/AdiBenZur/Stepper/blob/master/assets/images/user1.png?raw=true" width="450" />
+  <img src="https://github.com/AdiBenZur/Stepper/blob/master/assets/images/Admin4.png?raw=true" width="450" />
+</p>
 
 
+  User:
+-	Flow Definition: View information about all flows the user has permission to access and execute.
+-	Execution History: View the history of all flows the user has executed.
 
 
-  
-
+<p float="left">
+  <img src="https://github.com/AdiBenZur/Stepper/blob/master/assets/images/Admin3.png?raw=true" width="450" />
+  <img src="https://github.com/AdiBenZur/Stepper/blob/master/assets/images/user2.png?raw=true" width="450" />
+</p>
+<p float="left">
+  <img src="https://github.com/AdiBenZur/Stepper/blob/master/assets/images/user3.png?raw=true" width="450" />
+  <img src="https://github.com/AdiBenZur/Stepper/blob/master/assets/images/user4.png?raw=true" width="450" />
+</p>
