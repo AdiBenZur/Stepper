@@ -37,7 +37,12 @@ Administrator:
 -	Execution history: View all past executions performed by users.
 -	Statistics: View execution statistics, including the duration of flows and steps.
 
-  ![image](https://github.com/user-attachments/assets/e594f7c7-977c-4f87-8156-7ca4f24e4a8e)        ![image](https://github.com/user-attachments/assets/4c3072d8-8a99-4981-86cd-9099e2572608)
+<p float="left">
+  <img src=""C:\Users\Adi\Desktop\JAVA\Stepper\Project\resources\App pictures\Admin1.png" width="200" />
+  <img src=""C:\Users\Adi\Desktop\JAVA\Stepper\Project\resources\App pictures\Admin2.png"" width="200" />
+</p>
+
+
 
   
 
