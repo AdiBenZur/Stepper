@@ -1,4 +1,4 @@
-Stepper
+#Stepper#
 Stepper is a pipeline system designed for non-technical users to define, execute, and manage automated process (called flows). The system focuses on reuse of the various operational components as well as applying the same solution several times for many cases. 
 The architecture design aims for ease of extensibility with additional capabilities that will enrich the system flows.
 The project offers diverse UI options (CLI, GUI) and client-server architecture, supporting multiple clients at the same time, and management users permissions. It employs multithreading and asynchronous flows executions, with clients receiving status updates and result using pull’ing.
