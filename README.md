@@ -53,8 +53,8 @@ Administrator:
 
 
 <p float="left">
-  <img src="https://github.com/AdiBenZur/Stepper/blob/master/assets/images/Admin3.png?raw=true" width="450" />
-  <img src="https://github.com/AdiBenZur/Stepper/blob/master/assets/images/user2.png?raw=true" width="450" />
+  <img src="https://github.com/AdiBenZur/Stepper/blob/master/assets/images/Admin3.png?raw=true" width="300" />
+  <img src="https://github.com/AdiBenZur/Stepper/blob/master/assets/images/user2.png?raw=true" width="300" />
 </p>
 <p float="left">
   <img src="https://github.com/AdiBenZur/Stepper/blob/master/assets/images/user3.png?raw=true" width="450" />
