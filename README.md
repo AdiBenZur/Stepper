@@ -37,10 +37,7 @@ Administrator:
 -	Execution history: View all past executions performed by users.
 -	Statistics: View execution statistics, including the duration of flows and steps.
 
-<p float="left">
-  <img src=""C:\Users\Adi\Desktop\JAVA\Stepper\Project\resources\App pictures\Admin1.png" width="200" />
-  <img src=""C:\Users\Adi\Desktop\JAVA\Stepper\Project\resources\App pictures\Admin2.png"" width="200" />
-</p>
+
 
 
 
